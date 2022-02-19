@@ -1,0 +1,359 @@
+<!--
+    file: menu.html
+    author: Andrew Hoang
+    date: 27 Aug 2021
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- make the responsive design works on real devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta description for SEO -->
+        <meta name="description" content="Red Pepper Restaurant serves authentic Vietnamese, Chinese, and Thai entrées and cuisine to Saskatoon and area. Conveniently located in Downtown Saskatoon #dtnyxe. Available for dine-in, pick-up, or delivery. Vegetarian and vegan, gluten-free, and other dietary requirements can be met on request">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <!-- include stylesheets  -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
+        <!-- ionicons install-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- include javascript -->
+        <script defer src="scripts/scripts.js"></script>
+        <!-- google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Red Pepper Restaurant</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img class="logo" alt="Red Pepper logo" src="images/logo.png">
+            </a>
+            
+            <nav class="main-nav"> <!-- begin nav bar-->
+                <ul class="main-nav-list">
+                    <li>
+                        <a class="main-nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="menu.html">MENU</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="testimonials.html">TESTIMONIALS</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="promotion.html">PROMOTION</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link nav-cta" href="booking.html">BOOK NOW</a>
+                    </li>
+
+                </ul>
+            </nav><!-- end nav-->
+
+            <button class="btn-mobile-nav"> <!-- hamburger menu -->
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+            
+
+        </header>
+        <main>
+            <section class="section"> <!-- menu section: text + image, or image + text -->
+                <div class="container"> <!-- page heading -->
+                    <span class="subheading">
+                        Menu
+                    </span>
+                    <h2 class="heading-secondary">
+                        Experience a taste of the Orient
+                    </h2>
+                </div> <!-- end page heading container -->
+
+                <div class="menu-box container grid grid--2-cols"> <!-- page content container. Grid layout -->
+                    <!-- appetizers -->
+                    <div class="menu-text-box">
+                        <p class="menu-cat">
+                            Appetizers
+                        </p>
+                        <table class="menu-table">
+                            <tr>
+                                <td class="menu-item">
+                                    Vietnamese spring rolls (deep fried)
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Deep fried shrimp and pork rolls
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Shrimp and pork rolls (fresh)
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Grilled pork or grilled chicken rolls (fresh)
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Thai chicken wings
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Fried chicken wings w/Vietnamese caramel sauce
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Deep fried wontons and sauce
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Vietnamese cabbage salad w/chicken, Shrimp or pork
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Kim chi (spicy pickled Chinese cabbage)
+                                </td>
+                                <td class="menu-price">
+                                    $2.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Fresh lettuce
+                                </td>
+                                <td class="menu-price">
+                                    $1.95
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="menu-image-box">
+                        <img class="menu-img" src="images/menu/spring_rolls.jpg" alt="spring rolls image">
+                        <img class="menu-img" src="images/menu/fresh_rolls.png" alt="fresh rolls image"> 
+                    </div>
+
+                    <!-- Soup -->
+                    <div class="menu-image-box">
+                        <img class="menu-img" src="images/menu/wonton_soup.png" alt="wonton soup image">
+                    </div>
+
+                    <div class="menu-text-box">
+                        <p class="menu-cat">
+                            Soup
+                        </p>
+                        <table class="menu-table">
+                            <tr>
+                                <td class="menu-item">
+                                    Wonton soup
+                                </td>
+                                <td class="menu-price">
+                                    $7.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Deluxe wonton soup
+                                </td>
+                                <td class="menu-price">
+                                    $11.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Hot and sour soup (chicken, shrimp, egg, carrot &amp; green pepper)
+                                </td>
+                                <td class="menu-price">
+                                    $8.50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Thai tom yum (shrimp, tomato, mushroom &amp; onions)
+                                </td>
+                                <td class="menu-price">
+                                    $8.50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Special Southern Vietnamese soup with chicken or shrimp
+                                </td>
+                                <td class="menu-price">
+                                    $13.95
+                                </td>
+                            </tr>                            
+                        </table>
+                    </div>
+
+                    <!-- Vermicelli -->
+                    <div class="menu-text-box">
+                        <p class="menu-cat">
+                            Vermicelli Bowls
+                        </p>
+                        <table class="menu-table">
+                            <tr>
+                                <td class="menu-item">
+                                    Jumbo combo noodles (grilled pork, meat balls, shrimp, spring roll)
+                                </td>
+                                <td class="menu-price">
+                                    $10.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Assorted combo noodles (grilled pork, meat balls, spring roll)
+                                </td>
+                                <td class="menu-price">
+                                    $8.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Grilled pork and spring roll on noodles
+                                </td>
+                                <td class="menu-price">
+                                    $8.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Vietnamese rolls on noodles 
+                                </td>
+                                <td class="menu-price">
+                                    $8.95
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Grilled pork or chicken or beef or shrimp on noodles
+                                </td>
+                                <td class="menu-price">
+                                    $7.50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    Stir-fry chicken or beef or shrimp on noodles
+                                </td>
+                                <td class="menu-price">
+                                    $7.50
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="menu-item">
+                                    D.F Vegetable Roll on Noodles
+                                </td>
+                                <td class="menu-price">
+                                    $8.95
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="menu-image-box">
+                        <img class="menu-img" src="images/menu/vermicelli.jpg" alt="Vermicelli bowl image">
+                    </div>
+
+                </div> <!-- page content container ends -->
+            </section> <!-- end about section-->
+
+            
+        </main> <!-- end main-->
+
+        <footer class="footer"> <!-- footer begins-->
+            <div class="container grid grid--footer">
+                <div class="logo-col">
+                    <p class="footer-heading">
+                        <img class="footer-logo" src="images/logo.png" alt="Red Pepper Restaurant logo"> Red Pepper Restaurant
+                    </p>
+                    
+                    <ul class="social-links"> <!-- social links-->
+                        <li>
+                            <a class="footer-link" href="https://www.instagram.com/redpepper.restaurant/"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-tiktok"></ion-icon></a>
+                        </li>
+                    </ul> <!-- end social links -->
+
+                    <p class="copyright"> <!-- copyright information -->
+                        Copyright &copy; 2021 by Andrew Hoang. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="address-col">
+                    <p class="footer-heading">
+                        Contact Us
+                    </p> <!-- end heading -->
+                    <address class="contacts"> <!-- contact information -->
+                        <p class="address">
+                            123 - 3rd Avenue South, Saskatoon, SK
+                        </p>
+                        <p>
+                            <a class="footer-link" href="tel:3064771977">306.477.1977</a>
+                            <br>
+                            <a class="footer-link" href="mailto:info@redpepperyxe.com">info@redpepperyxe.com</a>
+                        </p>
+                    </address> <!-- end contact information -->
+                    
+                </div>
+            </div>
+        </footer> <!-- footer ends -->
+
+        
+    </body> 
+</html>

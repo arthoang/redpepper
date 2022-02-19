@@ -1,0 +1,360 @@
+/*
+ * file: common.css
+ * author: Andrew Hoang
+ * date: 26 Aug 2021
+*/
+
+/******************************/
+/* GENERAL COMPONENTS */
+/******************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* style the focus ring of all element*/
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(211, 47, 47, 0.5);
+}
+
+/* set root font size, so other elements sizing will be based on this */
+html {
+    /* we want to set root font size to 10px, based on the default web browser font size at 16px
+       use fraction 10 / 16 = 62.5% so that whatever font size user changes, it will always be at 10px */
+    font-size: 62.5%;
+    /* hide mobile navigator*/
+    overflow-x: hidden;
+}
+
+/* global setting for text style */
+body {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* hide mobile navigator*/
+    overflow-x: hidden;
+}
+
+/******************************/
+/* REUSABLE COMPONENTS */
+/******************************/
+
+/* style the section */
+.section{
+    padding: 4.8rem 0 6.4rem 0;
+}
+
+/* style the content wrapper - use for homepage and about us */
+.content-wrapper {
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    max-width: 130rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9.6rem;
+    align-items: center;
+}
+
+/* style the container */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+/* style the heading */
+.heading-primary,
+.heading-secondary {
+    font-weight: 700;
+    color: #D32F2F;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem; /* 52px */
+    line-height: 1.05;
+    margin-bottom: 3.2rem; /* 32px */
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem; /* 32px */
+}
+
+.subheading {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #3f0e0e;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+/* style the button */
+.btn,
+.btn:link, 
+.btn:visited {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    border-radius: 9px;
+    transition: all 0.3s; /* transition color */
+
+    border:none;
+    cursor: pointer;
+}
+
+.btn--full:link, .btn--full:visited {
+    background-color: #D32F2F;
+    color: #FFFFFF;
+}
+
+.btn--full:hover, .btn--full:active {
+    background-color: #be2a2a;
+    color: #FFFFFF;
+}
+
+.btn--outline:link, .btn--outline:visited {
+    background-color: #fbeaea;
+    color: #555;
+}
+
+.btn--outline:hover, .btn--outline:hover {
+    background-color: #FFFFFF;
+    color: #555;
+    box-shadow: inset 0 0 0 3px #fbeaea;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fff;
+    color: #555;
+}
+
+/* style the hashtag */
+.hashtag {
+    color: #D32F2F;
+    font-weight: 600;
+}
+
+/* helper class to increase right margin */
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+/* grid layout */
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+/* list style */
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #e06d6d;
+}
+
+/******************************/
+/* HEADER */
+/******************************/
+
+/* style the header container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.8rem;
+    height: 9.6rem;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+/* style the logo */
+.logo {
+    max-height: 4.4rem;
+}
+
+/******************************/
+/* NAVIGATION */
+/******************************/
+
+/* style the list */
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+/* style the link in nav*/
+.main-nav-link:link, .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #333;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover, .main-nav-link:active {
+    color: #be2a2a;
+}
+
+/* style call to action item */
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #FFFFFF;
+    background-color: #D32F2F;
+}
+
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+    background-color: #be2a2a;
+} 
+
+/******************************/
+/* MOBILE NAVIGATION */
+/******************************/
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+    z-index: 996;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display:none;
+}
+
+
+/******************************/
+/* FOOTER */
+/******************************/
+.grid--footer {
+    grid-template-columns: 2fr 1fr;
+}
+
+.footer {
+    padding: 4.8rem 0;
+    border-top: 1px solid #eee;
+    /* fix it at bottom */
+    margin-top: auto;
+    
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.footer-logo {
+    max-height: 1.8rem;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.footer-link:link, .footer-link:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-link:hover, .footer-link:active {
+    color: #555;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    
+}
+
+.social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: #767676;
+    margin-top: auto;
+}
+
+.address-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contacts {
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+.address {
+    margin-bottom: 1.6rem;
+}
+

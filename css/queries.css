@@ -1,0 +1,311 @@
+/* 
+ * file: queries.css
+ * author: Andrew Hoang
+ * date: 27 Aug 2021
+*/
+
+/* 1 em = 16px in media query*/
+
+/******************************/
+/* BELOW 1344px (smaller desktop) */
+/******************************/
+
+ @media (max-width: 84em) {
+    /* ------ HOME PAGE ---------*/
+    .content-wrapper {
+        max-width: 120rem;
+    }
+
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+ }
+
+ /******************************/
+/* BELOW 1200px (landscape tablet) */
+/******************************/
+
+@media (max-width: 75em) {
+    /* resize everything */
+    html {
+        /* reduce to 9x: 9/16 = 56.25% */
+        font-size: 56.25%;
+    }
+
+    /*resize heading */
+    .heading-secondary {
+        font-size: 3.6rem;
+        line-height: 1.2;
+        margin-bottom: 9.6rem; /* 32px */
+    }
+
+    /* resize grid gap */
+    .grid {
+        column-gap: 4.8rem;
+    }
+
+
+    /* ---- TOP NAV ---- */
+    
+    /* resize the nav list */
+    .main-nav-list {
+        gap: 3.2rem;
+    }
+
+    /* ---- HOME ----- */
+    .content-wrapper {
+       
+        gap: 4.8rem;
+       
+    }
+
+    /* ---- MENU ----- */
+    .menu-cat {
+        font-size: 5.2rem;
+    }
+
+    /* ---- PROMOTION ---- */
+    .combo-price {
+        font-size: 5.2rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 1.6rem;
+    }
+
+}
+
+ /******************************/
+/* BELOW 940px (tablet) */
+/******************************/
+
+@media (max-width: 59em) {
+    /* scale everything down */
+    html {
+        font-size: 50%;
+    }
+
+    /* ---- HOME PAGE and ABOUT US---- */
+
+    /* change to 1 col */
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+
+    /* resize home image */
+    .hero-img {
+        width: 80%;
+    }
+    
+    /* center */
+    .hero-img-box,
+    .hero-text-box {
+        text-align: center;
+    }
+
+    .good-reviews {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    /* ---- MENU ----- */
+    .menu-cat {
+        font-size: 4.4rem;
+    }
+
+    /* ---- TESTIMONIAL ---- */
+    .testimonial-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* ---- TESTIMONIAL ---- */
+    .gallery-box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ---- PROMOTION ---- */
+    .combo-name {
+        font-size: 1.8rem;
+    }
+
+    .combo-price {
+        font-size: 4.4rem;
+    }
+
+
+
+    /* ---- BOOKING ---- */
+    
+    /* increase form portion */
+    .booking {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    /* 1 col for form */
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
+    .btn--form {
+        margin-top: 1.2rem;
+    }
+
+    /* ---- MOBILE NAV ---- */
+    /* show nav button */
+    .btn-mobile-nav {
+        display: block;
+    }
+
+    /* overlay nav */
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 995;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+
+        /* hide navigation */
+        transform: translateX(100%);
+        opacity: 0;
+        /* make it unaccessible to mouse and keyboard */
+        pointer-events: none;
+        /* hide it from screen reader */
+        visibility: hidden;
+    }
+
+    /* turn list to column */
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    /* increase font size for link */
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 3rem;
+    } 
+
+    /* show main-nav when .nav-open class is available in html */
+    .nav-open .main-nav {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    /* disable iframe google map */
+    .nav-open .map {
+        pointer-events: none;
+    }
+    
+    /* show close button when .nav-open class is available in html */
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display:block;
+        
+    }
+
+    /* hide menu button when .nav-open class is available in html*/
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+        
+    }
+
+}
+
+ /******************************/
+/* BELOW 704px (smaller tablet) */
+/******************************/
+
+@media (max-width: 44em) {
+    /*resize heading */
+    .heading-secondary {
+        margin-bottom: 4.8rem; /* 32px */
+    }
+}
+
+
+ /******************************/
+/* BELOW 550px (phone) */
+/******************************/
+@media (max-width: 34em) {
+    /* scale down */
+    html {
+        font-size: 43%;
+    }
+
+    .section {
+        padding: 2.4rem 0 6.4rem 0;
+    }
+
+    .content-wrapper {
+        padding: 0 3.2rem;
+    }
+
+    /* style the button */
+    .btn,
+    .btn:link, 
+    .btn:visited {
+        padding: 2.4rem 1.6rem;
+    }
+
+    /* ---- GALLERY ---- */
+    .gallery-box {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 4.8rem;
+        row-gap: 4.8rem;
+    }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonial-box {
+        grid-template-columns: 1fr;
+        row-gap: 4.8rem;
+    }
+
+    .grid {
+        row-gap: 4.8rem;
+    }
+
+    /* ---- MENU ---- */
+    .grid--2-cols {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-text-box:nth-child(4) {
+        grid-row: 3;
+    }
+
+    /* ---- PROMOTION --- */
+    .promotion-combo:first-child {
+        
+        justify-self: center;
+    }
+
+    .promotion-combo:last-child {
+        justify-self: center;
+    }
+
+    /* ---- BOOKING ---- */
+    .booking {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-img-box {
+        height: 36rem;
+        grid-row: 1;
+    }
+
+    .booking-text-box {
+        padding: 3.2rem;
+    }
+
+
+
+}

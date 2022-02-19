@@ -1,0 +1,189 @@
+<!--
+    file: booking.html
+    author: Andrew Hoang
+    date: 27 Aug 2021
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- make the responsive design works on real devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta description for SEO -->
+        <meta name="description" content="Red Pepper Restaurant serves authentic Vietnamese, Chinese, and Thai entrées and cuisine to Saskatoon and area. Conveniently located in Downtown Saskatoon #dtnyxe. Available for dine-in, pick-up, or delivery. Vegetarian and vegan, gluten-free, and other dietary requirements can be met on request">
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <!-- include stylesheets  -->
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/queries.css">
+        <!-- ionicons install-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- include javascript -->
+        <script defer src="scripts/scripts.js"></script>
+        <!-- google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <title>Red Pepper Restaurant</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html">
+                <img class="logo" alt="Red Pepper logo" src="images/logo.png">
+            </a>
+            
+            <nav class="main-nav"> <!-- begin nav bar-->
+                <ul class="main-nav-list">
+                    <li>
+                        <a class="main-nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="about.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="menu.html">MENU</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="gallery.html">GALLERY</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="testimonials.html">TESTIMONIALS</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link" href="promotion.html">PROMOTION</a>
+                    </li>
+                    <li>
+                        <a class="main-nav-link nav-cta" href="booking.html">BOOK NOW</a>
+                    </li>
+
+                </ul>
+            </nav><!-- end nav-->
+
+            <button class="btn-mobile-nav"> <!-- hamburger menu -->
+                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+            </button>
+            
+
+        </header>
+        <main>
+            <section class="section"> <!-- booking section-->
+                <div class="container"> <!-- page container -->
+                    <div class="booking">
+                        <div class="booking-text-box">
+                            <h2 class="heading-secondary">Book now and get a free dessert</h2>
+                            <p class="booking-text">
+                                Your booking will be reserved for up to 30 minutes after your reservation time
+                            </p>
+                            <form class="booking-form" action="#">
+                                <div>
+                                    <label for="full-name">Full Name</label>
+                                    <input id="full-name" type="text" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label for="phone-number">Phone number</label>
+                                    <input id="phone-number" type="tel" placeholder="306 123 4567">
+                                </div>
+                                <div>
+                                    <label for="date">Date</label>
+                                    <input type="date" name="date" id="date">
+                                </div>
+                                <div>
+                                    <label for="time">Time</label>
+                                    <select id="time">
+                                        <option value="">Please select a time</option>
+                                        <option value="1100">11:00 AM</option>
+                                        <option value="1130">11:30 AM</option>
+                                        <option value="1200">12:00 PM</option>
+                                        <option value="1230">12:30 PM</option>
+                                        <option value="1300">01:00 PM</option>
+                                        <option value="1330">01:30 PM</option>
+                                        <option value="1400">02:00 PM</option>
+                                        <option value="1400">02:30 PM</option>
+                                        <option value="1500">03:00 PM</option>
+                                        <option value="1500">03:30 PM</option>
+                                        <option value="1600">04:00 PM</option>
+                                        <option value="1600">04:30 PM</option>
+                                        <option value="1700">05:00 PM</option>
+                                        <option value="1700">05:30 PM</option>
+                                        <option value="1800">06:00 PM</option>
+                                        <option value="1800">06:30 PM</option>
+                                        <option value="1900">07:00 PM</option>
+                                        <option value="1900">07:30 PM</option>
+                                        <option value="2000">08:00 PM</option>
+                                        <option value="2000">08:30 PM</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="party-size">Party size</label>
+                                    <input type="number" id="party-size" placeholder="2">
+                                </div>
+                                
+                                <button class="btn btn--form">Reserve</button>
+                            </form>
+                        </div>
+                        <div class="booking-img-box" role="img" aria-label="Lady enjoys food"></div>
+                    </div>
+                    
+                      
+                
+                </div> <!-- end page container -->
+                
+            </section> <!-- end booking section-->
+        </main> <!-- end main-->
+
+        <footer class="footer"> <!-- footer begins-->
+            <div class="container grid grid--footer">
+                <div class="logo-col">
+                    <p class="footer-heading">
+                        <img class="footer-logo" src="images/logo.png" alt="Red Pepper Restaurant logo"> Red Pepper Restaurant
+                    </p>
+                    
+                    <ul class="social-links"> <!-- social links-->
+                        <li>
+                            <a class="footer-link" href="https://www.instagram.com/redpepper.restaurant/"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a class="footer-link" href="#"><ion-icon class="social-icon" name="logo-tiktok"></ion-icon></a>
+                        </li>
+                    </ul> <!-- end social links -->
+
+                    <p class="copyright"> <!-- copyright information -->
+                        Copyright &copy; 2021 by Andrew Hoang. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="address-col">
+                    <p class="footer-heading">
+                        Contact Us
+                    </p> <!-- end heading -->
+                    <address class="contacts"> <!-- contact information -->
+                        <p class="address">
+                            123 - 3rd Avenue South, Saskatoon, SK
+                        </p>
+                        <p>
+                            <a class="footer-link" href="tel:3064771977">306.477.1977</a>
+                            <br>
+                            <a class="footer-link" href="mailto:info@redpepperyxe.com">info@redpepperyxe.com</a>
+                        </p>
+                    </address> <!-- end contact information -->
+                    
+                </div>
+            </div>
+        </footer> <!-- footer ends -->
+    </body> 
+</html>
